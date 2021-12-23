@@ -33,7 +33,7 @@ include_once 'includes/session.php'?>
           <a class="nav-item nav-link active" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" >Cuz Why Not</a>
         </div>
         <div class="navbar-nav ml-auto">
-          <!-- <a class="nav-item nav-link" href="register.php">Register <span class="sr-only">(current)</span></a> -->
+          <a class="nav-item nav-link" href="register.php">Register <span class="sr-only">(current)</span></a>
           <?php 
               if(!isset($_SESSION['userid'])){
           ?>
