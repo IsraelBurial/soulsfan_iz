@@ -29,7 +29,7 @@
         </a>
 
         <p>
-            Source= <a href="https://www.allmusic.com/artist/anita-baker-mn0000572579/biography
+            Source - <a href="https://www.allmusic.com/artist/anita-baker-mn0000572579/biography
             ">Biography</a>
 
             <!-- <br>
