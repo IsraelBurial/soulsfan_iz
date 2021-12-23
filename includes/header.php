@@ -21,15 +21,15 @@ include_once 'includes/session.php'?>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="soulsartists.php">Souls Fan</a>
+      <a class="navbar-brand" href="index.php">Souls Fan</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav mr-auto">
-          <a class="nav-item nav-link active" href="soulsartists.php">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a>
           
-          <a class="nav-item nav-link active" href="soulsartists.php">Souls Artists <span class="sr-only">(current)</span></a>
+          <!-- <a class="nav-item nav-link active" href="soulsartists.php">Souls Artists <span class="sr-only">(current)</span></a> -->
           <a class="nav-item nav-link active" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" >Cuz Why Not</a>
         </div>
         <div class="navbar-nav ml-auto">
