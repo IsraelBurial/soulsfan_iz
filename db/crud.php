@@ -34,9 +34,9 @@
             }
         }
 
-        public function editFans($id,$fname, $lname, $dob, $email,$contact,$gender){
+        public function editFans($id,$fname, $lname, $dob, $email,$contact, $gender){
            try{ 
-                $sql = "UPDATE `fans` SET `firstname`=:fname,`lastname`=:lname,`dateofbirth`=:dob,`emailaddress`=:email,`contactnumber`=:contact,`gender_id`=:gender WHERE fan_id = :id ";
+                $sql = "UPDATE `fans` SET `firstname`=:fname,`lastname`=:lname,`dateofbirth`=:dob,`emailaddress`=:email,`contactnumber`=:contact,`gender`=:gender WHERE fan_id = :id ";
                 $stmt = $this->db->prepare($sql);
                 // bind all placeholders to the actual values
                 $stmt->bindparam(':id',$id);
@@ -59,7 +59,7 @@
 
         public function getFans(){
             try{
-                $sql = "SELECT * FROM `fans` f inner join genders g on f.gender_id = gender_id";
+                $sql = "SELECT * FROM `fans` a inner join genders  on a.gender_id = b.gender_id";
                 $result = $this->db->query($sql);
                 return $result;
             }catch (PDOException $e) {
@@ -71,7 +71,7 @@
 
         public function getFanDetails($id){
            try{
-                $sql = "select * from fans f inner join genders g on f.gender_id = g.gender_id 
+                $sql = "select * from `fans` a inner join genders b on a.gender_id = b.gender_id 
                 where fan_id = :id";
                 $stmt = $this->db->prepare($sql);
                 $stmt->bindparam(':id', $id);
