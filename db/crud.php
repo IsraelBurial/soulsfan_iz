@@ -59,7 +59,7 @@
 
         public function getFans(){
             try{
-                $sql = "SELECT * FROM `fans` a inner join genders  on a.gender_id = b.gender_id";
+                $sql = "SELECT * FROM `fans` a inner join genders b on a.gender_id = b.gender_id";
                 $result = $this->db->query($sql);
                 return $result;
             }catch (PDOException $e) {
